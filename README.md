@@ -70,28 +70,28 @@ This project addresses the need for a system that can safely transfer surgical t
 
 ### 1. Container Identification & Bin Mapping
 
-- Six container IDs are defined, split evenly between three small and three large containers, each assigned a red, green, or blue autoclave bin.
+- Six container IDs are defined, with three small and three large containers, each assigned a red, green, or blue autoclave bin.
 - The `bin_location` function maps each container ID to a specific xyz coordinate, identified through trial and error within the Quanser Interactive Labs environment.
 - At the start of each cycle, the `main` function randomly selects a container ID from a list of six and removes it from the list, ensuring all six containers are spawned exactly once without repetition.
 
 ### 2. Pickup, Gripper & Drawer Control
 
-- The `move_end_effector` function always routes the arm back to a fixed home position before moving to any pickup or bin location, keeping motion consistent between cycles.
-- The `control_gripper` function closes the gripper to pick up a container and opens it to release one, using a flag value to determine the direction.
-- The `control_drawer` function only triggers for container IDs 4 through 6 (the large containers), opening the matching red, green, or blue autoclave drawer before the gripper releases its container, then closing it afterward. Small containers skip this step entirely and are placed directly on top of their bin.
+- The `move_end_effector` function always sends the arm back to a fixed home position before moving to any pickup or bin location, keeping motion consistent between cycles.
+- The `control_gripper` function closes the gripper to pick up a container and opens it to release one, using a flag value to determine the action.
+- The `control_drawer` function only triggers for container IDs 4 to 6 (the large containers), opening the matching red, green, or blue autoclave drawer before the gripper releases the container, then closes it afterward. Small containers skip this step entirely and are placed directly on top of their bin.
 
 ### 3. Sensor Gated Sequencing
 
-- Every action in the sequence is gated by two simulated sensor emulator readings, referred to in the program as L and R, each checked against a threshold of 0.5 before the corresponding step is allowed to execute.
+- Every action in the sequence is gated by two simulated sensor emulator readings, referred to in the program as L and R, which are checked against a threshold of 0.5 before the corresponding step is allowed to execute.
 - Arm movement only proceeds once L is above 0.5 and R equals 0.
 - Gripper actions require both L and R to be above 0.5.
-- Drawer actions require R to be above 0.5 and L to equal 0, and only apply when the container ID indicates a large container.
-- This gating structure ensures each step in the pickup and drop off sequence only executes once its corresponding condition is confirmed, rather than relying on timing alone.
+- Drawer actions require R to be above 0.5 and L to equal 0, and only apply when the container ID indicates it's a large container.
+- This gating structure ensures each step in the pickup and drop off sequence only executes once its corresponding condition is confirmed.
 
 ### 4. Container Design
 
 - The sterilization container was modelled in Autodesk Inventor to hold surgical scissors securely while fitting within the provided footprint constraints.
-- A rod and cap mechanism secures the tool inside the container, replacing a full lid to minimize 3D print time while still keeping the tool from escaping during transport.
+- A rod and cap mechanism secures the tool inside the container, replacing a full lid while still keeping the tool from escaping during transport.
 - Ventilation windows on each side of the container maximize airflow during the sterilization process.
 
 <p align="center">
@@ -105,7 +105,7 @@ This project addresses the need for a system that can safely transfer surgical t
 
 - The program successfully identified, transferred, and deposited all six containers into their correct autoclave locations without manual intervention.
 - Large containers correctly triggered their designated drawer to open, while small containers were consistently placed on top of the bin.
-- The final deliverable was a fully functional robotic arm program paired with a container design that held the surgical scissors securely and stably throughout the transfer and sterilization process.
+- The final deliverable was a fully functional robotic arm program paired with a container design that held the surgical scissors securely throughout the transfer and sterilization process.
 
 ---
 
