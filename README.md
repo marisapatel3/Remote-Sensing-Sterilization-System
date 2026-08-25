@@ -95,7 +95,7 @@ This project addresses the need for a system that can safely transfer surgical t
 - Ventilation windows on each side of the container maximize airflow during the sterilization process.
 
 <p align="center">
-<img src="Media/Pictures/CAD_Container_Assembly.jpg" alt="CAD container assembly" width="450"><br>
+<img src="Media/CAD_Container_without_Tool.jpg" alt="CAD container assembled" width="500"><br>
 <em>CAD Model of the Final Container Assembly, Showing the Rod and Cap Mechanism and Ventilation Windows.</em>
 </p>
 
