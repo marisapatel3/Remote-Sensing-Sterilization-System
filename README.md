@@ -7,8 +7,8 @@ Python programmed robotic arm that autonomously identifies, sorts by size, and d
 `Python` `Raspberry Pi` `Quanser Interactive Labs` `Robotics`
 
 <p align="center">
-<img src="Media/Pictures/Bins_and_Containers_QLabs.jpg" alt="Bins and containers in Q-Labs" width="550"><br>
-<em>Autoclave Bins and Sterilization Containers Within the Quanser Interactive Labs Environment.</em>
+<img src="Media/Q-Labs_Environment_Sorted_Bins.jpg" alt="Bins and containers in Q-Labs" width="500"><br>
+<em>Autoclave Bins and Sterilization Containers Within the Quanser Interactive Labs Environment after being Correctly Sorted.</em>
 </p>
 
 ---
