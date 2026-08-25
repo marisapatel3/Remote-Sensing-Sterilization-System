@@ -29,7 +29,7 @@ Python programmed robotic arm that autonomously identifies, sorts by size, and d
 
 ## Overview
 
-This project addresses the need for a system that can safely transfer surgical tool containers into an autoclave for sterilization without manual handling. The finished system is a Quanser Q-arm robotic arm, programmed in Python within Quanser Interactive Labs, that identifies each of six containers, transports it to its assigned autoclave bin, and either opens a drawer or places the container on top depending on its size. Each container was also modelled in Autodesk Inventor to securely hold a flat clamp surgical tool using a rod and cap mechanism, with ventilation windows to support the sterilization process.
+This project addresses the need for a system that can safely transfer surgical tool containers into an autoclave for sterilization without manual handling. The finished system is a Quanser Q-arm robotic arm, programmed in Python within Quanser Interactive Labs, that identifies each of six containers, transports it to its assigned autoclave bin, and either opens a drawer or places the container on top depending on its size. A container was also modelled in Autodesk Inventor to securely hold a flat clamp surgical tool using a rod and cap mechanism, with ventilation windows to support the sterilization process.
 
 ---
 
