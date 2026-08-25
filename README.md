@@ -40,7 +40,7 @@ This project addresses the need for a system that can safely transfer surgical t
 | Component | Purpose |
 |---|---|
 | Quanser Q-arm | Robotic arm that identifies, picks up, transports, and drops off each sterilization container |
-| Sterilization Container | Custom container holding a flat clamp tool, secured with a rod and cap mechanism and ventilated with side windows |
+| Sterilization Container | Custom container holding surgical scissors, secured with a rod and cap mechanism and ventilated with side windows |
 | Autoclave Bins | Six designated locations, three requiring a drawer to open for large containers and three that receive small containers directly on top |
 
 ### Software
@@ -90,7 +90,7 @@ This project addresses the need for a system that can safely transfer surgical t
 
 ### 4. Container Design
 
-- The sterilization container was modelled in Autodesk Inventor to hold a flat clamp tool securely while fitting within the provided footprint constraints.
+- The sterilization container was modelled in Autodesk Inventor to hold surgical scissors securely while fitting within the provided footprint constraints.
 - A rod and cap mechanism secures the tool inside the container, replacing a full lid to minimize 3D print time while still keeping the tool from escaping during transport.
 - Ventilation windows on each side of the container maximize airflow during the sterilization process.
 
@@ -105,7 +105,7 @@ This project addresses the need for a system that can safely transfer surgical t
 
 - The program successfully identified, transferred, and deposited all six containers into their correct autoclave locations without manual intervention.
 - Large containers correctly triggered their designated drawer to open, while small containers were consistently placed on top of the bin.
-- The final deliverable was a fully functional robotic arm program paired with a container design that held the flat clamp securely and stably throughout the transfer and sterilization process.
+- The final deliverable was a fully functional robotic arm program paired with a container design that held the surgical scissors securely and stably throughout the transfer and sterilization process.
 
 ---
 
